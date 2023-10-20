@@ -1,9 +1,50 @@
+'use client';
+
+import { useEffect } from 'react'
 import Image from 'next/image'
 import styles from './page.module.css'
+import Slider from "react-slick";
+import logoSliderImages from '@/config/logoSliderImages'
 
 // monolith hero banner
 export default function Home() {
-  return (
+
+  const settings = {
+    dots: false,
+    arrows: false,
+    autoplay: true,
+    pauseOnHover: true,
+    autoplaySpeed: 4000,
+    infinite: true,
+    speed: 3000,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    adaptiveHeight: false,
+    variableWidth: false,
+    responsive: [
+      {
+        breakpoint: 1290,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 890,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 491,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
+  };
+
+
+  return ( 
     <main>
       <div className={styles.heroContainer}>
         <div className={styles.innerContainer}>
@@ -14,6 +55,15 @@ export default function Home() {
             <button className={styles.filledCta}>request demo</button>
             <button className={styles.outlinedCta}>speak to our team</button>
           </div>
+        </div>
+        <div className={styles.sliderContainer}>
+          <Slider {...settings}>
+            { logoSliderImages.map((img) => (
+              <div key={img.src} className={styles.logoContainer}>
+                <img src={img.src} alt={img.alt} width={img.width} />
+              </div>
+            )) }
+          </Slider>
         </div>
       </div>
     </main>

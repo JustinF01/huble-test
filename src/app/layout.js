@@ -1,7 +1,7 @@
 import { Inter } from 'next/font/google'
 import '../css/reset.css'
-
-const inter = Inter({ subsets: ['latin'] })
+import "../../node_modules/slick-carousel/slick/slick.css"; 
+import "../../node_modules/slick-carousel/slick/slick-theme.css";
 
 export const metadata = {
   title: 'Huble Test',
@@ -11,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>{children}</body>
     </html>
   )
 }
