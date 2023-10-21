@@ -35,6 +35,30 @@ const logoSliderImages = [
         height: 57,
         alt: 'michelin logo'
     },
+    {
+        src: '/logos/Aptar.svg',
+        width: 86,
+        height: 24,
+        alt: 'Aptar logo'
+    },
+    {
+        src: '/logos/bae.svg',
+        width: 155,
+        height: 24,
+        alt: 'bae logo'
+    },
+    {
+        src: '/logos/honda.svg',
+        width: 155,
+        height: 19,
+        alt: 'honda logo'
+    },
+    {
+        src: '/logos/Siemens.svg',
+        width: 150,
+        height: 24,
+        alt: 'siemens logo'
+    },
 ];
 
 export default logoSliderImages;

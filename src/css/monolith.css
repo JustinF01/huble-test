@@ -1,0 +1,10 @@
+@font-face {
+	font-family: 'CircularStd';
+	src: url('../../public/circular-std-medium-500.ttf');
+}
+
+html, body {
+	font-family: 'CircularStd','sans-serif';
+	font-size: 1rem;
+	font-weight: 500;
+}
