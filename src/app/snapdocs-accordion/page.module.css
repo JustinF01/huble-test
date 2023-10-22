@@ -127,3 +127,20 @@
     top: 100%;
     transition-delay: 100ms;
 }
+
+@media(max-width: 1124px) {
+    .accordionImages {
+        display: none;
+    }
+    .accordionList {
+        width: 100%;
+    }
+    .accordionList li {
+        max-width: 100%;
+    }
+}
+@media(max-width: 578px) {
+    .mainContainer {
+        padding: 1rem;
+    }
+}
