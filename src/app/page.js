@@ -11,10 +11,10 @@ export default function Home() {
           <p className={styles.text}>Thanks for considering me for the position. Please find the links to the assessment options below:</p>
           <ul>
             <li>
-              <Link href={'/monolith-story-slider'}>Monolith Story Slider</Link>
+              <Link href={'/monolith-story-slider'} target='_blank'>Monolith Story Slider</Link>
             </li>
             <li>
-              <Link href={'/snapdocs-accordion'}>Snapdocs Accordion</Link>
+              <Link href={'/snapdocs-accordion'} target='_blank'>Snapdocs Accordion</Link>
             </li>
           </ul>
         </div>

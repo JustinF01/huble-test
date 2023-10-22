@@ -10,7 +10,7 @@ export const metadata = {
   title: 'Snapdocs Accordion',
   description: 'A special accordion',
   icons: {
-    icon: '/monolith-icon.webp'
+    icon: '/sd_icon.png'
   }
 }
 
