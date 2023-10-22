@@ -46,7 +46,7 @@ const Page = () => {
                                     <span className={[styles.headingIcon, currentOpen === item.heading && styles.rotateUp].join(' ')}><FiChevronDown/></span>
                                 </div>
                                 <div id={index} className={[styles.itemText, currentOpen === item.heading ? styles.showText : styles.hide ].join(' ')}>
-                                    {item.text}
+                                    {item.text} 
                                     <button className={styles.cta}>
                                         <Link href={item.link}>Learn more</Link>
                                         <span className={styles.ctaArrow}><FiArrowRight /></span>
