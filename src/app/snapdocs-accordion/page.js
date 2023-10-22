@@ -50,7 +50,7 @@ const Page = () => {
                                     <button className={styles.cta}>
                                         <Link href={item.link}>Learn more</Link>
                                         <span className={styles.ctaArrow}><FiArrowRight /></span>
-                                    </button>
+                                    </button> 
                                 </div>
                             </li>
                         )) }
